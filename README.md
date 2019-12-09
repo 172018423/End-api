@@ -64,17 +64,25 @@
 
 ### 原型1.交互及界面设计与信息设计
 
-![人脸搜索](https://images.gitee.com/uploads/images/2019/1207/140448_57f72519_1829822.png "1.PNG")
+* 视频内容分析：
 
-![分标签](https://images.gitee.com/uploads/images/2019/1207/140518_e5ac05db_1829822.png "2.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154430_14bca727_1829822.png "1.PNG")
 
-![图像效果增强](https://images.gitee.com/uploads/images/2019/1207/140535_48eb583f_1829822.png "3.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154441_5a8cdae9_1829822.png "2.PNG")
+
+
+* 媒体内容审核：
+
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154505_5ee368d6_1829822.png "3.PNG")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154517_c29848b8_1829822.png "4.PNG")
+
 
 ### 原型3.原型文档
 
-* [完整原型](http://127.0.0.1:32767/start.html#p=%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2_login&g=1)
+* [完整原型](http://127.0.0.1:32768/start.html#p=%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2_login&g=1)
 
-* [Github下载链接](https://github.com/172018423/-PRD-)
+* [Github下载链接](https://github.com/172018423/video-)
 
 
 
