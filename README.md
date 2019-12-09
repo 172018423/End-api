@@ -80,7 +80,7 @@
 
 ### 原型3.原型文档
 
-* [完整原型](http://127.0.0.1:32768/start.html#p=%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2_login&g=1)
+* [完整原型](http://127.0.0.1:32767/start.html#p=%E8%A7%86%E9%A2%91%E5%86%85%E5%AE%B9%E6%89%AB%E6%8F%8F&g=1)
 
 * [Github下载链接](https://github.com/172018423/video-)
 
