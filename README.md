@@ -80,7 +80,7 @@
 
 ### 原型3.原型文档
 
-* [完整原型]( http://nfunm172018423.gitee.io/video_assistant_prototype)
+* [完整原型请点击此查看](http://nfunm172018423.gitee.io/video_assistant_prototype_2)
 
 * [Github下载链接](https://github.com/172018423/video-)
 
