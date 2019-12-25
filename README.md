@@ -92,13 +92,15 @@
 
 ### API输入输出尝试
 
-... import requests as req
+```
+import requests as req
 api = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
 api_key = 'ea8v9eHeYWpgMw7jvD5CsN5pODwyJZ41'
 api_secret = 'WxNyyqVtkeHLApDLC9n846NshHAokkf2'
 image_url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568615911164&di=c4fc76c9a7e1350fac590e8cf292d230&imgtype=0&src=http%3A%2F%2Fimages.chizhouren.com%2Fforum%2F201510%2F11%2F152607pzqruiwiirdiylye.jpg'
 rep = req.post(api,data={'api_key':api_key,'api_secret':api_secret,'image_url':image_url})
-print(rep.json()) ...
+print(rep.json()) 
+```
 
 
 ---
