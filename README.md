@@ -92,16 +92,170 @@
 
 ### API输入输出尝试
 
+* 代码：
+
 ```
 import requests as req
 api = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
 api_key = 'ea8v9eHeYWpgMw7jvD5CsN5pODwyJZ41'
 api_secret = 'WxNyyqVtkeHLApDLC9n846NshHAokkf2'
-image_url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568615911164&di=c4fc76c9a7e1350fac590e8cf292d230&imgtype=0&src=http%3A%2F%2Fimages.chizhouren.com%2Fforum%2F201510%2F11%2F152607pzqruiwiirdiylye.jpg'
+vedeo_url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568615911164&di=c4fc76c9a7e1350fac590e8cf292d230&imgtype=0&src=http%3A%2F%2Fimages.chizhouren.com%2Fforum%2F201510%2F11%2F152607pzqruiwiirdiylye.jpg'
 rep = req.post(api,data={'api_key':api_key,'api_secret':api_secret,'image_url':image_url})
-print(rep.json()) 
+ {
+    "code": 0,
+    "message": "NoError",
+    "codeDesc": "Success",
+    "data":[
+        {
+            "confidence": 20, 
+            "category": "pornDetection", 
+            "suggestion": "block", 
+            "subCode": "0", 
+            "label": "porn"
+        },
+        {
+            "confidence": 30, 
+            "category": "pornDetection",
+            "suggestion": "pass", 
+            "subCode": "0", 
+            "label": "hot"
+        },
+        {
+            "confidence": 50, 
+            "category": "pornDetection",
+            "suggestion": "pass", 
+            "subCode": "0", 
+            "label": "breast"
+        },
+        {
+            "confidence": 50, 
+            "category": "pornDetection",
+            "suggestion": "pass", 
+            "subCode": "0", 
+            "label": "ass"
+        },
+        {
+            "confidence": 50, 
+            "category": "pornDetection",
+            "suggestion": "pass", 
+            "subCode": "0", 
+            "label": "bareBody"
+        },
+        {
+            "confidence": 50,
+            "category": "pornDetection",
+            "suggestion": "pass", 
+            "subCode": "0", 
+            "label": "unrealHotPeople"
+        },
+        {
+            "confidence": 100,
+            "category": "OCR",
+            "suggestion": "block", 
+            "label": "ocr",
+            "subCode": "0", 
+            "ocrMsg":"加微信看爽片"
+        },
+        {
+            "confidence": 100,
+            "category": "OCR",
+            "suggestion": "block", 
+            "label": "UgcAntiSpam    ",
+            "subCode": "0"
+        },
+        {
+            "confidence": 80,
+            "category": "political",
+            "suggestion": "block", 
+            "label": "political",
+            "subCode": "0", 
+            "candidates":[{"confidence":80,"name":"张三"}, {"confidence":70,"name":"李四"}]
+        },
+        {
+            "confidence": 100,
+            "category": "QRCode",
+            "suggestion": "block", 
+            "label": "QRCode",
+            "subCode": "0", 
+            "candidates":["http://u.wechat.com/EGn4HWqn3jXK8xvx52uUYRE","http://u.wechat.com/EGn4HWqn3jXK8xvx52uUYkE"]
+        },
+        {
+            "confidence": 70,
+            "category": "liveScene",
+            "suggestion": "block", 
+            "subCode": "0", 
+            "label": "smoke"
+        }
+    ]
+}
 ```
 
+* 结果：
+```
+{'code': 0,
+ 'message': 'NoError',
+ 'codeDesc': 'Success',
+ 'data': [{'confidence': 20,
+   'category': 'pornDetection',
+   'suggestion': 'block',
+   'subCode': '0',
+   'label': 'porn'},
+  {'confidence': 30,
+   'category': 'pornDetection',
+   'suggestion': 'pass',
+   'subCode': '0',
+   'label': 'hot'},
+  {'confidence': 50,
+   'category': 'pornDetection',
+   'suggestion': 'pass',
+   'subCode': '0',
+   'label': 'breast'},
+  {'confidence': 50,
+   'category': 'pornDetection',
+   'suggestion': 'pass',
+   'subCode': '0',
+   'label': 'ass'},
+  {'confidence': 50,
+   'category': 'pornDetection',
+   'suggestion': 'pass',
+   'subCode': '0',
+   'label': 'bareBody'},
+  {'confidence': 50,
+   'category': 'pornDetection',
+   'suggestion': 'pass',
+   'subCode': '0',
+   'label': 'unrealHotPeople'},
+  {'confidence': 100,
+   'category': 'OCR',
+   'suggestion': 'block',
+   'label': 'ocr',
+   'subCode': '0',
+   'ocrMsg': '加微信看爽片'},
+  {'confidence': 100,
+   'category': 'OCR',
+   'suggestion': 'block',
+   'label': 'UgcAntiSpam    ',
+   'subCode': '0'},
+  {'confidence': 80,
+   'category': 'political',
+   'suggestion': 'block',
+   'label': 'political',
+   'subCode': '0',
+   'candidates': [{'confidence': 80, 'name': '张三'},
+    {'confidence': 70, 'name': '李四'}]},
+  {'confidence': 100,
+   'category': 'QRCode',
+   'suggestion': 'block',
+   'label': 'QRCode',
+   'subCode': '0',
+   'candidates': ['http://u.wechat.com/EGn4HWqn3jXK8xvx52uUYRE',
+    'http://u.wechat.com/EGn4HWqn3jXK8xvx52uUYkE']},
+  {'confidence': 70,
+   'category': 'liveScene',
+   'suggestion': 'block',
+   'subCode': '0',
+   'label': 'smoke'}]}
+   ```
 
 ---
 
