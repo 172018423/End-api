@@ -92,7 +92,15 @@
 
 ### API输入输出尝试
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1207/145013_9648c47b_1829822.png "5.PNG")
+... import requests as req
+api = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
+api_key = 'ea8v9eHeYWpgMw7jvD5CsN5pODwyJZ41'
+api_secret = 'WxNyyqVtkeHLApDLC9n846NshHAokkf2'
+image_url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1568615911164&di=c4fc76c9a7e1350fac590e8cf292d230&imgtype=0&src=http%3A%2F%2Fimages.chizhouren.com%2Fforum%2F201510%2F11%2F152607pzqruiwiirdiylye.jpg'
+rep = req.post(api,data={'api_key':api_key,'api_secret':api_secret,'image_url':image_url})
+print(rep.json()) ...
+
+
 ---
 
 ### API2.使用比较分析 5%
