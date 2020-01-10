@@ -2,17 +2,17 @@
 
 ---
 
-## PRD 价值主张设计 15%
+## PRD 价值主张设计 
 
 
-### PRD1.加值宣言 3%
+### PRD1.加值宣言 
 
 运用人工智能技术(**视频内容分析**,**媒体内容审核**)来加持短视频分析，解决用户痛点
 
 
 ---
 
-### PRD2.核心价值 3%
+### PRD2.核心价值 
 
 * 目前短视频市场正迎来爆发，这款app将为视频内容发布者提升视频的曝光量
 
@@ -22,7 +22,7 @@
 
 ---
 
-### PRD3.核心价值与用户痛点 3%
+### PRD3.核心价值与用户痛点 
 
 * 短视频数量众多，用户无法精准搜索到自己所需的视频内容，发布者的视频曝光量也难以得到提升
 
@@ -30,7 +30,7 @@
 
 ---
 
-### PRD4.人工智能概率性与用户痛点 3%
+### PRD4.人工智能概率性与用户痛点 
 
 * **视频内容分析**：泛标签提取是基于自然语言处理，当内容复杂时识别可能会出错，导致分类错误。还有一些特殊物品还无法识别，例如一些药品，水果等
 
@@ -38,7 +38,7 @@
 
 ---
 
-### PRD5.需求列表与人工智能API加值 3%
+### PRD5.需求列表与人工智能API加值 
 
 * **百度API**：视频内容分析,媒体内容审核
 
@@ -60,22 +60,29 @@
 
 ---
 
-## 原型 20%
+## 原型 
 
 ### 原型1.交互及界面设计与信息设计
 
-* 视频内容分析：
+* 信息设计
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154430_14bca727_1829822.png "1.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093853_3ba44d51_1829822.png "原型信息设计.PNG")
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154441_5a8cdae9_1829822.png "2.PNG")
+* 界面设计：
 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093915_c889e9d2_1829822.png "1.PNG")
 
-* 媒体内容审核：
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093923_ec0c7134_1829822.png "2.PNG")
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154505_5ee368d6_1829822.png "3.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093930_45b6ce4f_1829822.png "3.PNG")
 
-![输入图片说明](https://images.gitee.com/uploads/images/2019/1209/154517_c29848b8_1829822.png "4.PNG")
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093938_0e51f123_1829822.png "4.PNG")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093946_aebc5cfb_1829822.png "5.PNG")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/093958_561b89e3_1829822.png "6.PNG")
+
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0110/094011_2097a501_1829822.png "8.PNG")
 
 
 ### 原型3.原型文档
@@ -88,7 +95,7 @@
 
 ---
 
-## API 产品使用关键AI或机器学习之API的输出入展示 15%
+## API 产品使用关键AI或机器学习之API的输出入展示 
 
 ### API输入输出尝试
 
@@ -259,7 +266,7 @@ rep = req.post(api,data={'api_key':api_key,'api_secret':api_secret,'image_url':i
 
 ---
 
-### API2.使用比较分析 5%
+### API2.使用比较分析 
 
 * 百度与腾讯与阿里云的比较（参考链接：[人脸识别哪家强？](https://www.zhihu.com/question/37060782)）：
 
